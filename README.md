@@ -1,2 +1,3 @@
-# Steps to install ERPNext
-Hello,<br> Myself Surya Dev <br>
+# Steps to install ERPNex
+To install ERPNext follow these steps:
+---Before Installation---
