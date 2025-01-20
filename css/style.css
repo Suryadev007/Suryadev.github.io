@@ -5,7 +5,32 @@
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
 }
-
+#back-to-top {
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	z-index: 999;
+	padding: 8px 13px;
+	border-radius: 20px 0px 0px 20px;
+	color: white;
+	background: purple;
+	border: none;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+#back-to-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top:active {
+  background-color: #555;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
